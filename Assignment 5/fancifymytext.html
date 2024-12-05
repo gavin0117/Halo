@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 5</title>
+    <!--link JavaScript file-->
+    <script src="fancifymytext.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Fun with JavaScript</h1>
+
+    <fieldset>
+      <legend>Box</legend>
+      <textarea id="myTextArea" rows="4" cols="30"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Fancy</legend>
+      <!--Bigger button-->
+      <button onclick="sendAlert()">Bigger!</button>
+      <br /><br />
+      <!--FancyShmancy radio button-->
+      <label>
+        FancyShmancy
+        <input type="radio" id="idFancyShmancy" name="choices" onchange="fancifyOption()" />
+      </label>
+      <br />
+      <!--BoringBetty radio button-->
+      <label>
+        BoringBetty
+        <input type="radio" id="idBoringBetty" name="choices" onchange="boringOption()" />
+      </label>
+      <br /><br />
+      <!--Moo button-->
+      <button onclick="moo()">Moo!</button>
+    </fieldset>
+  </body>
+</html>
